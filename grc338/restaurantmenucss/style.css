@@ -36,11 +36,11 @@ h3 {
 	margin: 3em 1.2em 1em; /*Three values again. You got the idea.*/
 	padding-top: .3em;
 	font-size: 1.2em;
-	color: rgb(220, 20, 60);
+	color: rgb(159, 49, 59);
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
-	border-top: .2em solid rgb(220, 20, 60);
+	border-top: .2em solid rgb(159, 49, 59);
 }
 
 h4 {
@@ -52,7 +52,7 @@ p.description {
 }
 
 p.price {
-	color: rgb(220, 20, 60);
+	color: rgb(159, 49, 59);
 }
 
 ul {
