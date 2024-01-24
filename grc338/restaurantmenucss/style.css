@@ -40,7 +40,7 @@ h3 {
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
-	border-top: .2em solid rgb(159, 49, 59);
+	border-top: 3px solid rgb(159, 49, 59);
 }
 
 h4 {
@@ -52,7 +52,7 @@ p.description {
 }
 
 p.price {
-	color: rgb(159, 49, 59);
+	color: rgb(220, 20, 60);
 }
 
 ul {
