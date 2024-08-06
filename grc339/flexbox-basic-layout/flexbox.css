@@ -1,0 +1,83 @@
+/* CSS DOCUMENT */
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	padding: 1em;
+	max-width: 65em;
+}
+
+img {
+	width: 100%;
+	padding-top: 1em;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 65em;
+	margin: auto;
+}
+
+h1 {
+	margin: 1em 0 0.5em;
+	font-weight: bold;
+}
+
+h2 {
+	margin-top: 2.2em;
+	font-weight: bold;
+}
+
+h3 {
+	margin-top: 2em;
+	line-height: 0em;
+	font-weight: bold;
+}
+
+ol {
+	padding-left: 0;
+}
+
+header, footer {
+	flex: 1 0 100%;
+	margin-top: 2em;
+}
+
+figure {
+	margin: auto;
+	width: 100;
+}
+
+article {
+	flex: 2 0 30em;
+	margin-right: 1em;
+}
+
+aside {
+	flex: 1 0 15em;
+}
+
+aside section {
+	background: #ececec;
+	padding: 0 1em 1em;
+	margin: 1em 0;
+	line-height: 1.5em;
+}
+
+section a {
+	text-decoration: none;
+	color: #000000;
+}
+
+footer {
+	border-top: 1px solid #000;
+}
+
+footer a {
+	text-decoration: none;
+	color: #000;
+}
