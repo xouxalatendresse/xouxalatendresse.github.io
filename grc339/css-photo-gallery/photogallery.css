@@ -31,7 +31,7 @@ div.container {
 main {
     position: relative;
     overflow: hidden;
-    padding-bottom: calc(65% + 2em);
+    padding-bottom: calc(73% + 3em);
 }
 
 figure{
@@ -58,9 +58,9 @@ input:nth-of-type(4):checked ~ main figure:nth-of-type(4){
 }
 
 nav {
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 0.3em;
+    grid-gap: 0.2em;
 }
 
 
