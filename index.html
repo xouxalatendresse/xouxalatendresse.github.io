@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Final Project: Financial Calculator</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav>
+        <!-- defining the 3 main tabs, selecting one of these will call "script.js" -->
+        <ul>
+            <li data-tab="tab1" class="current"><a href="#">Expenses</a></li>
+            <li data-tab="tab2"><a href="#">Budget</a></li>
+            <li data-tab="tab3"><a href="#">Savings</a></li>
+        </ul>
+    </nav>
+    
+    <!-- this is the div for tab 1 content -->
+    <div id="tab1" class="current">
+        <h1>Expense Tracker</h1>
+        
+        <!-- creating expense form for user input -->
+        <form id="expenseForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" step="0.01" required>
+            
+            <label for="category">Category:</label>
+            <select name="category" id="dropx" required>
+                <option value="" default>-</option>
+                <option value="groceries">Groceries</option>
+                <option value="etc">Etc.</option>
+                <option value="rent">Rent</option>
+                <option value="savings">Savings</option>
+            </select>
+            
+            <!-- creating expense table -->
+            <table id="expenseTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- rows will be added here by js file -->
+                </tbody>
+				<!-- bottom row will display result-->
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Expenses:</td>
+                        <td id="totalExpense">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+			
+          	<!-- button for adding the expense -->
+            <button type="submit">Add Expense</button>
+        </form>
+    </div>
+    
+    <!-- this is the div for tab 2 content -->
+    <div id="tab2">
+        <h1>Budget Tracker</h1>
+        <!-- creating form for budget -->
+        <form id="budgetForm">
+			<!-- give user the option to choose the category -->
+            <label for="budgetCategory">Category:</label>
+            <select name="category" id="budgetCategory" required>
+                <option value="" default>-</option>
+                <option value="groceries">Groceries</option>
+                <option value="etc">Etc.</option>
+                <option value="rent">Rent</option>
+                <option value="savings">Savings</option>                       
+            </select>
+			<!-- ask user for amount input -->
+            <label for="budgetAmount">Amount:</label>
+            <input type="number" id="budgetAmount" name="budgetAmount" step="0.01" required>
+            <!-- button for adding budget -->
+            <button type="submit">Add Budget</button>
+			<!-- press button to add budget -->
+        </form>
+
+        <!-- creating table for budgets -->
+        <h2>Budget Overview</h2>
+        <table id="budgetTable">
+            <thead>
+                <!-- creating columns for budget -->
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- creating rows for budget -->
+                <!-- rows will be added here by js file -->
+            </tbody>
+			<!-- bottom row, different color, total budget-->
+            <tfoot>
+                <tr>
+                    <td colspan="1">Total Budget:</td>
+                    <td id="totalBudgetAmount">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- this is the div for tab 3 content -->
+    <div id="tab3">
+        <h1>Savings Calculator</h1>
+		<!-- ask user for paycheck amount -->
+        <label for="paycheck">Enter your paycheck amount:</label>
+        <input type="number" id="paycheck" placeholder="Enter paycheck amount">
+		<!-- button to calculate from paycheck input-->
+        <button id="calculate-button">Calculate!</button>
+		<!-- call for js function to display result-->
+        <div id="result"></div>
+    </div>
+	
+<!--     <button id="top-button">Top</button> -->
+	<!-- commented out the top button as I thought it was unnecessary for this project -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
